@@ -235,3 +235,64 @@ Fragment: #section2
     var myFunction = Welcome("John");
     myFunction("Welcome "); //Output: Welcome John
     myFunction("Hello Mr."); //output: Hello Mr. John */
+
+
+    // Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
+
+   /* What is IndexedDB
+
+    IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.*/
+
+
+    /*What is web storage
+
+    Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
+
+    1. **Local storage:** It stores data for current origin with no expiration date.
+    2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed.*/
+
+
+    /*What are the options in a cookie
+
+    There are few below options available for a cookie,
+
+    1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
+
+    ```javascript
+    document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
+    ```
+
+    1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
+
+    ```javascript
+    document.cookie = "username=John; path=/services";
+    ``` */
+
+    /* What are the differences between cookie, local storage and session storage
+
+    Below are some of the differences between cookie, local storage and session storage,
+
+    | Feature                           | Cookie                             | Local storage    | Session storage     |
+    | --------------------------------- | ---------------------------------- | ---------------- | ------------------- |
+    | Accessed on client or server side | Both server-side & client-side. The `set-cookie` HTTP response header is used by server inorder to send it to user.     | client-side only | client-side only    |
+    | Expiry                          | Manually configured using Expires option | Forever until deleted    | until tab is closed |
+    | SSL support                       | Supported                          | Not supported    | Not supported       |
+    | Maximum data size                 | 4KB                                | 5 MB             | 5MB                 |
+    | Accessible from                            | Any window | Any window | Same tab |
+    | Sent with requests | Yes | No | No | */
+
+
+    /*### What is the main difference between localStorage and sessionStorage
+
+    LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+43. ### How do you access web storage
+
+    The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
+    For example, you can read and write on local storage objects as below
+
+    ```javascript
+    localStorage.setItem("logo", document.getElementById("logo").value);
+    localStorage.getItem("logo"); */

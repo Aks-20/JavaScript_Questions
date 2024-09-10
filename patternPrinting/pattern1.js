@@ -9,5 +9,5 @@ function patterns (n){
     }
 }
 patterns(4)
-patterns(5)
+//patterns(5)
 

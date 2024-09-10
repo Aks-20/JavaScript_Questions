@@ -1,1 +1,1 @@
-JavaScript Questions
+Important JavaScript Questions

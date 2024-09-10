@@ -5,3 +5,5 @@ function rightAlignedTrianglePattern(n) {
 }
 
 rightAlignedTrianglePattern(5);
+
+rightAlignedTrianglePattern(6);

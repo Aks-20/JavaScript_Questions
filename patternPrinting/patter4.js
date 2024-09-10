@@ -8,5 +8,5 @@ function invertedTrianglePattern(rows) {
     }
   }
   
-  invertedTrianglePattern(5);
+  invertedTrianglePattern(8);
   

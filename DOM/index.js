@@ -49,7 +49,7 @@ document.getElementById("submitButton").onclick = function(){
 
 
 
-let count=0;
+/*let count=0;
 document.getElementById("decrease").onclick= function(){
     count--;
     document.getElementById("countLabel").innerHTML=count
@@ -63,4 +63,69 @@ document.getElementById("increase").onclick= function(){
 document.getElementById("reset").onclick= function(){
     count=0;
    document.getElementById("countLabel").innerHTML=count
+}*/
+
+/*let x
+let y
+let z
+document.getElementById("roll").onclick=function(){
+x=Math.floor(Math.random()*6)+1
+y=Math.floor(Math.random()*6)+1
+z=Math.floor(Math.random()*6)+1
+
+
+
+document.getElementById("xlabel").innerHTML=x
+document.getElementById("ylabel").innerHTML=y
+document.getElementById("zlabel").innerHTML=z
+}*/
+
+
+//method chaining =calling one method after another in one continuous lines of code.
+
+/*let username="bro"
+let letter=username.charAt(0).toUpperCase().trim()
+
+console.log(letter);*/
+
+//checked property 
+document.getElementById("MyButton").onclick=function(){
+const checkbox=document.getElementById("checkbox")
+const Visa=document.getElementById("visa")
+const masterBtn=document.getElementById("mastercardBtn")
+const paypalbtn=document.getElementById("paypalbtn")
+    
+    
+    
+    
+    
+   /* if(document.getElementById("checkbox".checked==true)){
+console.log("Submitted");
+
+    }
+    else{
+console.log("Not Submitted");
+
+    }
 }
+*/
+
+
+if(Visa.checked){
+    console.log("You are paying with Visa");
+    
+}
+else if(masterBtn.checked){
+console.log("You are paying with MasterCard");
+
+}
+else if(paypalbtn.checked){
+    console.log("You are payng with PayPal")
+}
+else{
+    console.log("You must select a payment type");
+    
+}
+}
+
+//Strictly Equallity Operator

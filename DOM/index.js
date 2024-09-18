@@ -128,4 +128,17 @@ else{
 }
 }
 
-//Strictly Equallity Operator
+//Strictly Equallity Operator ===
+// for loop when you want to repeat code for a certain amount of time.
+//While loop when you want to repeat code for certain condition is true.
+//condition ? iftrue:iffalse
+//variable scope=where a variable is accesible.
+//let=variables are limited to block scope{}.
+//var=variables are limited to a function.
+//GLOBAL VAARIABLE=is declared outside any function
+//(if global,var will change browser window properties)
+//Template literals=delimited with (`) instead of double or single quotes allows embedded variables and expressions
+//toLocaleString()=return a string with a language sensitive representation of this number
+//number.toLocaleString(Locale,{options})
+//locale=specfied that language (undefined=default set in browser)
+//options=options with formaatiing options

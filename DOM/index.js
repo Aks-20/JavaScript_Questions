@@ -142,3 +142,32 @@ else{
 //number.toLocaleString(Locale,{options})
 //locale=specfied that language (undefined=default set in browser)
 //options=options with formaatiing options
+
+//Spread Operator:allows an iterable such as array or string to be expandend in places with zero  or more arguments are expected 
+//rest parameter represents an indefinite number of parameters (packs arguments into the array)
+ 
+
+let a=1
+let b=2
+let c=3
+let d=4
+let e=5
+
+
+console.log(sum(a,b,c,d,e))
+
+function sum(...numbers){
+    let total =0;
+    for (let number of numbers){
+        total+=number
+    }
+    return total
+ }
+
+ //callback = a function passed as an argument to another function
+ //helps us develop asynchronous code
+ //array.forEach()=executes  a provided callback function once for each every  element
+
+ //array.map()=executes a provided callback function once for each array element and creates a new array.
+
+ 

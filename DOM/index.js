@@ -169,5 +169,37 @@ function sum(...numbers){
  //array.forEach()=executes  a provided callback function once for each every  element
 
  //array.map()=executes a provided callback function once for each array element and creates a new array.
+ 
+ let numbers = [1, 2, 3, 4, 5];
+ let squares = numbers.map(square); 
+ let cubes =numbers.map(cube)
+ // Pass the square function to map
+ 
+ squares.forEach(print)
+ cubes.forEach(print)
+ function square(element) {
+     return Math.pow(element, 2); // Square each element
+ }
+
+ function cube(element) {
+    return Math.pow(element, 3); // Square each element
+}
+ 
+ function print(elements) {
+     console.log(elements);
+ }
+
+
+ //function expressions =function without a name (anonymous function) avoid polluting the global scope with names 
+
+ //arrow function :need curly braces uses more than one statement
+
+ const square = (n) => {
+    console.log('Squaring:', n);  // Multiple statements require curly braces
+    return n * n;  // Explicit return needed
+};
+console.log(square(4));  // Output: "Squaring: 4" and 16
 
  
+const square = (n) => n * n;  // Implicit return, no curly braces needed
+console.log(square(4));  // Output: 16

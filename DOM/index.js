@@ -203,3 +203,47 @@ console.log(square(4));  // Output: "Squaring: 4" and 16
  
 const square = (n) => n * n;  // Implicit return, no curly braces needed
 console.log(square(4));  // Output: 16
+
+
+
+//closure = afunction with preserved and private data give you access to an outer function's scope from an inner function.
+
+//Map=object that hold key value pairs of any data type.
+const store = new Map([
+    ["t-shirt", 20],
+    ["jeans", 30],
+    ["socks", 10]
+]);
+
+store.forEach((value, key) => console.log(`${key} $${value}`));
+ //Object =A group of properties and methods
+ //properties :WHAT OBJECT HAS
+ //METHODS=WHAT OBJECT CAN DO
+ //USE. TO ACCESS PROPERTIES /METHODS
+
+ //THIS=REFERNCE TO A PARTICULAR OBJECT THE OBJECT DEPENDS ON IMMEDIATE CONTEXT
+
+ //class = ablueprint  for creating objects define what properties and methods they have use a constructor for unique properties
+ //constructor = a special method of a class,accepts arguments and assign properties
+ 
+ 
+ class Student {
+    constructor(name,age,cgpa){
+        this.name=name;
+        this.age=age;
+        this.cgpa=cgpa;
+    }
+    study(){
+        console.log(`${this.name}is Studying`)
+    }
+ }
+ const Student1=new Student("Spongebob",19,9.7)
+console.log(Student.name);
+console.log(Student.age);
+console.log(Student.cgpa);
+Student1.study()
+
+
+//static =belongs to the class, not the objects properties:useful for caches,fixed configuration methods:useful for utility functioons 
+
+

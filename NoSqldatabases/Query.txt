@@ -1,0 +1,7 @@
+Odm-Object data mapper :Mongoose map documents coming from a database into usable js objects.
+Mongoose provides  a ways for us to model out our application data and define a schema.It offers easy ways to validate data and build complex queries from the comfort of js
+
+Why BSON over Json 
+supports more data types like date,time and binary data
+bson's binary structure allows faster traversal and data retrival
+provides additional metadata like length and type information making searches faster

@@ -247,3 +247,65 @@ Student1.study()
 //static =belongs to the class, not the objects properties:useful for caches,fixed configuration methods:useful for utility functioons 
 
 
+//inheritance=a child class can inherit all the properties and methods from another class.
+
+
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    eat() {
+        console.log(`This ${this.name} is eating`);
+    }
+
+    sleep() {
+        console.log(`This ${this.name} is sleeping`);
+    }
+}
+
+class Rabbit extends Animal {
+    constructor() {
+        super("Rabbit");
+    }
+
+    run() {
+        console.log(`This ${this.name} is running`);
+    }
+}
+
+class Fish extends Animal {
+    constructor() {
+        super("Fish");
+    }
+
+    swim() {
+        console.log(`This ${this.name} is swimming`);
+    }
+}
+
+class Hawk extends Animal {
+    constructor() {
+        super("Hawk");
+    }
+
+    fly() {
+        console.log(`This ${this.name} is flying`);
+    }
+}
+
+// Example usage
+const rabbit = new Rabbit();
+rabbit.eat();
+rabbit.run();
+
+const fish = new Fish();
+fish.eat();
+fish.swim();
+
+const hawk = new Hawk();
+hawk.eat();
+hawk.fly();
+
+
+//set interval=invokes a function repeatedly after  a number of milliseconds

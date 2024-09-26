@@ -309,3 +309,17 @@ hawk.fly();
 
 
 //set interval=invokes a function repeatedly after  a number of milliseconds
+//console.time() starts a timer you can use to track how long an operation takes Give each timer a unique name
+//promises =object that encapsulates  the result of an asynchronous operation like asynchronous methods
+//promises have state pending fulfilled and rejected 
+
+//2parts producing &consuming 
+//invoking using then method 
+
+//async makes a function return promise
+//await makes function wait for a promise 
+
+//ES6 IDEA behind a module is that its a file of reusable code 
+//we can import sections of prewritten code to use whatever 
+//great for any general  utility values and function
+//helps to make your code more usable and maintainale 
